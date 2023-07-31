@@ -1,0 +1,132 @@
+@import url(style-common.css);
+
+nav {
+	align-items: center;
+	justify-content: center;
+	color: var(--text);
+}
+
+nav > a > img {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+nav > span {
+	display: inline;
+}
+
+.search-container {
+	margin-top: 20px;
+	text-align: center;
+	height: 20vh;
+}
+
+.search-container input[type=text] {
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid var(--primary);
+	margin-right: 8px;
+}
+
+.search-container input[type=text]:focus-visible {
+	outline: none;
+}
+
+.search-container input[type=submit] {
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: var(--primary);
+	color: var(--text);
+	border: none;
+	cursor: pointer;
+}
+
+.search-container input[type=submit]:hover {
+	opacity: 0.6;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+}
+
+.weather-card {
+	background-color: var(--secondary);
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: var(--box-shadow);
+}
+
+.location {
+	margin-bottom: 20px;
+}
+
+.location h2 {
+	font-size: 28px;
+	margin: 0;
+	color: var(--text);
+}
+
+.location p {
+	font-size: 14px;
+	color: var(--text);
+	margin: 0;
+}
+
+.weather-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.weather-icon {
+	margin-right: 30px;
+}
+
+.weather-icon img {
+	width: 100px;
+	height: 100px;
+}
+
+.temp h3 {
+	font-size: 24px;
+	margin: 0;
+	color: var(--text);
+}
+
+.temp span {
+	font-weight: bold;
+}
+
+.temp p {
+	font-size: 16px;
+	color: var(--text);
+	margin: 0;
+}
+
+.additional-info {
+	display: flex;
+	justify-content: center;
+}
+
+.additional-info>div {
+	flex: 1;
+}
+
+.humidity h4,
+.wind-speed h4 {
+	font-size: 14px;
+	color: var(--text);
+	margin: 0;
+}
+
+.humidity p,
+.wind-speed p {
+	font-size: 18px;
+	color: var(--text);
+	margin: 5px 0;
+}

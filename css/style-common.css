@@ -1,0 +1,26 @@
+/* Light mode */
+:root {
+	--text: #000000;
+	--background: #ffffff;
+	--primary: #8fb3ff;
+	--secondary: #ebf1ff;
+	--accent: #d41d6d;
+	--box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: var(--background);
+}
+
+/* Dark mode */
+body.dark-mode {
+	--text: #ffffff;
+	--background: #000000;
+	--primary: #8fb3ff;
+	--secondary: #001952;
+	--accent: #f199bf;
+	--box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

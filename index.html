@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link rel="icon" type="image/x-icon" href="img/cloudy-day-2.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav>
+		<a href="">
+			<img height="32" width="32" src="img/animated/cloudy-day-2.svg" alt="weather-icon">
+		</a>
+		<span>Weather App</span>
+	</nav>
+	
+	<!-- Search box -->
+	<div class="search-container">
+		<input type="text" id="city-input" placeholder="Enter city name">
+		<input type="submit" id="search-button" value="Submit"></input>
+	</div>
+
+	<!-- Weather info -->
+	<div class="container">
+		<div class="weather-card">
+			<div class="location">
+				<h2 class="skeleton .skeleton-text" id="city-name">.</h2>
+				<p class="skeleton .skeleton-text" id="date-time">.</p>
+			</div>
+			<div class="weather-info">
+				<div class="weather-icon">
+					<img class="skeleton" id="weather-icon" src="" alt="">
+				</div>
+				<div class="temp">
+					<h3>Temperature: <span class="skeleton .skeleton-text" id="temperature">.</span></h3>
+					<p class="skeleton .skeleton-text" id="weather-condition">.</p>
+				</div>
+			</div>
+			<div class="additional-info">
+				<div class="humidity">
+					<h4>Humidity</h4>
+					<p class="skeleton .skeleton-text" id="humidity">.</p>
+				</div>
+				<div class="wind-speed">
+					<h4>Wind Speed</h4>
+					<p class="skeleton .skeleton-text" id="wind-speed">.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Script -->
+	<script src="js/script.js"></script>
+	<script src="js/dark-mode.js"></script>
+</body>
+
+</html>
