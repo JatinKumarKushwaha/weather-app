@@ -61,12 +61,25 @@ function updateWeatherData(data) {
 	const weatherIcon = document.getElementById('weather-icon');
 
 	cityNameElement.classList.remove("skeleton");
+	cityNameElement.classList.remove("skeleton-text");
+
 	dateTimeElement.classList.remove("skeleton");
+	dateTimeElement.classList.remove("skeleton-text");
+
 	temperatureElement.classList.remove("skeleton");
+	temperatureElement.classList.remove("skeleton-text");
+
 	weatherConditionElement.classList.remove("skeleton");
+	weatherConditionElement.classList.remove("skeleton-text");
+
 	humidityElement.classList.remove("skeleton");
+	humidityElement.classList.remove("skeleton-text");
+
 	windSpeedElement.classList.remove("skeleton");
+	windSpeedElement.classList.remove("skeleton-text");
+
 	weatherIcon.classList.remove("skeleton");
+	weatherIcon.classList.remove("skeleton-text");
 
 	cityNameElement.textContent = data.name + ", " + data.sys.country;
 	dateTimeElement.textContent = new Date(data.dt * 1000);
@@ -79,7 +92,7 @@ function updateWeatherData(data) {
 
 // Function to handle key input on text input
 const cityInput = document.getElementById('city-input');
-cityInput.addEventListener("keyup", ({key}) => {
+cityInput.addEventListener("keyup", ({ key }) => {
 	if (key === "Enter") {
 		const city = cityInput.value.trim();
 		if (city !== '') {
